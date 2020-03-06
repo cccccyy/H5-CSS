@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+        	.border{
+				width: 500px;
+        	}
+        	.star{
+        		color: red;
+        		margin-left: 5px;
+        	}
+        	.squre{
+        		width: 460px;
+        		height: 25px;
+        	}
+        	.school{
+        		width: 465px;
+        		height: 30px;
+        	}
+        	.sub{
+        		width: 465px;
+        		height: 30px;
+        		background-color: #dddcdc;
+        		border:1px solid #ccc;
+        		margin-top: 30px;
+        	}
+    	</style>
+ </head>
+ <body>
+ 	<div class="border">
+		<h1>学生信息</h1>
+ 		<fieldset style="width:480px">
+			<legend style="color:red;font-size: 24px;">学生档案</legend>
+			<form>
+				<p>姓名：</p>
+				<input class="squre" type="text" name="name" required placeholder="请输入姓名"/><span class="star">*</span>
+				<p>学号：</p>
+				<input class="squre" type="text" name="num" required placeholder="请输入学号"/><span class="star">*</span>
+				<p>手机号码：</p>
+				<input class="squre" type="tel" name="tel" required placeholder="请输入手机号"/><span class="star">*</span>
+				<p>邮箱地址：</p>
+				<input class="squre" type="email" name="email" required placeholder="请输入邮箱地址"/><span class="star">*</span>
+				<p>录取学校：</p>
+				<input type="search"  class="school" name="school" autocomplete="on" list="names"/>
+                <datalist id="names">
+                    <option>河北师范大学</option>
+                    <option>河北科技大学</option>
+                    <option>河北大学</option>
+                    <option>河北外国语学院</option>
+                    <option>河北工业大学</option>
+                </datalist>
+				<p>入学成绩：</p>
+				<input class="squre" type="number" name="school" min="0" max="750" step="1"/>
+				<p>入学时间：</p>
+				<input class="squre" type="date" name="date"/>
+				<input type="submit" class="sub" value="提交"/>
+			</form>
+		</fieldset>
+	</div>
+ </body>
+ </html>
